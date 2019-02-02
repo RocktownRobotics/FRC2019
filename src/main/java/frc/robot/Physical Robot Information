@@ -1,0 +1,25 @@
+This file contains information on the physical status of the robot with regards to programming it. It is a
+plain-English database of where and what motors are, plus type and position of sensors, and other such things.
+It is assumed that the reader is somewhat familiar with the basic design and function of the robot
+
+
+Drivetrain:
+
+    -Left & Right Side arrays of three main drive CIM motors (6 total, 2 master, 4 slave)
+    -Possible Gear Shifter for each array (2 total, pneumatic actuation)
+    -Possible Encoder for each array (2 total)
+
+Hatch Arm/Hatch Sucker:
+
+    -One Piston to extend/retract the Spinny thing
+    -One motorized Spinny Thing that holds the Hatch
+
+Ramp:
+
+    -One Ramp Deployment Piston (1 total, pneumatically actuated)
+    -Possibly one Ramp End Piston (but probably not)
+    -Possibly one Ramp Bridge Piston
+    
+
+
+

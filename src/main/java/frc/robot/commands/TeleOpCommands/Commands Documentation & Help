@@ -1,0 +1,38 @@
+CheesyDrive
+
+    This command drives the robot around, with left stick for throttle and right stick for steering
+
+DriveWithJoystick
+
+    This metacommand runs either CheesyDrive or TankDrive. Running by default. Tank/Cheesy drive is determined
+    by OI.DRIVE_MODE, currently set to Tank Drive
+
+DropRamp
+
+    This command extends the Ramp Piston to deploy the buddy ramp
+
+RetractRamp
+
+    This command retracts the Ramp End Piston to try and raise the end of the ramp off the playinf field surface
+
+TankDrive
+
+    This command drives the robot around, with each stick running throttle on it's corresponding drive motor
+    cluster.
+
+MetaSuck
+
+    When triggered, this command group will toggle between Suck and StopSucking
+
+Suck
+
+    When triggered, this command starts the HatchSucker sucking on a Hatch
+
+    Not currently functional
+
+StopSucking
+
+    When triggered, this command will stop the HatchSucker from sucking onto a Hatch.
+
+    Not currently functional
+

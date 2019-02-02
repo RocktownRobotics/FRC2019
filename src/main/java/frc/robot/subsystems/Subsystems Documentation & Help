@@ -1,0 +1,29 @@
+ExampleSubsystem
+
+    An example. Copy and paste to have a framework for new subsystems
+
+Ramp
+
+    The piston system thing that unfolds the ramp system
+
+    Contains code for operating a single Ramp Piston to (un)fold the buddyramp
+
+HatchArm
+
+    The arm contraption that moves the HatchGrabber around
+
+    Not actually made yet
+
+HatchSucker
+
+    The thing that grabs Hatches, whatever that's gonna be
+
+    Not actually made yet....
+
+    Default command is to Suck
+
+Drivetrain
+
+    The wheels and associated motors and stuff
+
+    Copied from 2018 reference and fixed. Should be working now

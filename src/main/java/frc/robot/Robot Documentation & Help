@@ -1,0 +1,23 @@
+Main
+
+    Probably does something useful. Don't mess with it.
+
+OI
+
+    This assigns what buttons do what things, and also assigns names to the various buttons and other inputs
+
+    Still needs to have the actual keybindings emplaced.
+
+Robot
+
+    The basic skeleton that runs all the other things. Basically the metaclass to rule all the metaclasses
+
+    Contains instances of all Robot subsystems
+
+    Also chooses the Autonomous program to run, though this is not currently in place
+
+RobotMap
+
+    This assigns all the various things to all the various ports
+
+    right now everything is on null port

@@ -1,0 +1,19 @@
+ TODO Read through this every once in a while....
+    
+    
+    -A couple options for the HatchSucker vacuum... 
+        1) we could just have a Suck command triggered by a WhileHeld
+        2) We could have a Suck and StopSucking, controlled by a MetaSuck command group that would whenPressed
+toggle between Suck and StopSucking, with each just interrupting the other... I mostly just want an excuse toggle
+make MetaSuck a thing... and now it is.
+
+
+    -MECHANICAL-- We'll need some kind of passive holder thing that keeps the preloaded Hatch in contact with the
+HatchSucker while the HatchArm is retracted, as the HatchSucker is not going to be activated right at the start of
+the match and we don't want our Hatch falling out onto the floor. This can just be a little nonmotorized arm that gets
+shoved down when the HatchArm deploys and needs to be manually reset, we don't need it after we get control of the
+HatchSucker systems. Alternatively it could be a little rail that the Hatch slides into when the HatchArm is retracted,
+the details are irrelevant.
+
+
+    -
