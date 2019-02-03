@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.OI;
 import frc.robot.RobotMap;
 // import frc.robot.commands.TeleOpCommands.DriveWithJoystick;
+import frc.robot.commands.TeleOpCommands.DriveWithJoystick;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
@@ -91,8 +92,7 @@ public class Drivetrain extends Subsystem {
 	@Override
 	public void initDefaultCommand() {
 		// Use either CHEESY_DRIVE or TANK_DRIVE for DriveType
-		//TODO
-		// setDefaultCommand(new DriveWithJoystick(OI.DRIVE_MODE));
+		setDefaultCommand(new DriveWithJoystick(OI.DRIVE_MODE));
 	}
 
 	/**

@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.commands.ExampleCommand;
+import frc.robot.commands.AutonomousPrograms.PrimaryAutonomousProgram;
+import frc.robot.commands.TeleOpCommands.DriveWithJoystick;
 import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.HatchArm;
@@ -34,12 +36,12 @@ public class Robot extends TimedRobot {
 
   public static final ExampleSubsystem m_ExampleSubsystem = new ExampleSubsystem();
   
-  public static final HatchArm kHatchArm = new HatchArm();
   public static final Drivetrain kDrivetrain = new Drivetrain();
-public static final Ramp kRamp = new Ramp();
 public static final RobotCompressor kCompressor = new RobotCompressor();
 public static final RampBridge kRampBridge = new RampBridge();
+public static final HatchArm kHatchArm = new HatchArm();
 public static final RampEnd kRampEnd = new RampEnd();
+public static final Ramp kRamp = new Ramp();
 
   Command m_autonomousCommand;
   SendableChooser<Command> m_chooser = new SendableChooser<>();
@@ -57,7 +59,8 @@ public static final RampEnd kRampEnd = new RampEnd();
   public void robotInit() {
     CameraServer.getInstance().startAutomaticCapture();
 		m_oi = new OI();
-    m_chooser.setDefaultOption("Default Auto", new ExampleCommand());
+    m_chooser.setDefaultOption("Default Auto", new DriveWithJoystick(OI.DRIVE_MODE));
+    m_chooser.addOption("Auto to Shuttle Nose Starboard", new PrimaryAutonomousProgram());
     // chooser.addOption("My Auto", new MyAutoCommand());
     SmartDashboard.putData("Auto mode", m_chooser);
   }
@@ -153,5 +156,6 @@ System.out.println("Yay! Robot is under autonomous control! Robot is free!!!!!!"
    */
   @Override
   public void testPeriodic() {
+    System.out.println("It's working...");
   }
 }

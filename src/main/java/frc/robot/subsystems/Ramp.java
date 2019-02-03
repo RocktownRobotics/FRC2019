@@ -6,7 +6,7 @@ import frc.robot.RobotMap;
 
 public class Ramp extends Subsystem {
 	//TODO make the module number match the PCM ID
-	private Solenoid RampPiston = new Solenoid(RobotMap.RAMP_PISTON);
+	public Solenoid RampPiston = new Solenoid(0, RobotMap.RAMP_PISTON);
 
 public Ramp() {
 

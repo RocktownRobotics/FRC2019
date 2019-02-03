@@ -1,0 +1,31 @@
+
+    As programmer(s) for the 2020 Rocktown Robotics team, it will be a lot simpler for you to base your
+new code on the old code created by previous teams. This is standard practice, and provides an excellent
+base code for you, while not depriving you of learning things, as you will most definetely have to change
+some things.
+
+    Unfortunately, the 2019 FRC Game Rules replaced the old forced Autonomous Period with a "sandstorm"
+in which Driver vision is restricted to that provided by onboard cameras. I have attempted to convince 
+the rest of the team that a well-refined, encoder & gyro-controlled automated sequence will be far more
+precise and consistent than any human operation run through some awkwardly placed low-resolution camera.
+I have failed.
+
+    In the interest of making the job of future team 3274 programmers a bit easier, I have hereby included
+text file versions of the 2018 Autonomous commands to automatically drive and turn. They worked, and
+they worked well. Code for encoders and the gyro are already (mostly) present in most relevant places of the 
+2019 code,(specifically Robot and Drivetrain), often commented out.
+
+    Obviously, this code is configured for the 2018 Rocktown Robotics Robot, and as such will require 
+a bit of fine-tuning to be suitable for whatever you come up with next year. Nevertheless, editing the
+old code as needed will be a lot easier than creating new code from scratch. I'll also include a copy
+of 2018's OI file, as that includes the neccessary code for implementing Encoders and gyros, as well as
+options to teleop control a more intricate robot than what we have this year, as well as an example of
+one of our integrated Autonomous programs.
+
+    I've also included a (somewhat) brief description of the function of the code in a comment at the 
+very top. The commenting doesn't matter in a text file, of course, but it will if/when you convert it 
+into a java file (just rename the file whatever.java)
+
+                                                                            Ian 
+                                                                     Rocktown Robotics main programmer
+                                                                                2019 season

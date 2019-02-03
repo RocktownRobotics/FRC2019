@@ -54,9 +54,10 @@ public static int CONTROLLER_ONE_START_BUTTON= 8;
         ////////////////////////////////
         //////////Ramp Systems//////////
         ////////////////////////////////
-  public static final int RAMP_PISTON = NULL_PORT;
-  public static final int RAMP_END_PISTON = NULL_PORT;
-  public static final int RAMP_BRIDGE_PISTON = NULL_PORT;
+        //TODO make sure these are the right ports on PCM
+  public static final int RAMP_PISTON = 2;
+  public static final int RAMP_END_PISTON = 3;
+  public static final int RAMP_BRIDGE_PISTON = 4;
 
         ////////////////////////////////
         ///////////Drivetrain///////////
@@ -75,7 +76,8 @@ public static int CONTROLLER_ONE_START_BUTTON= 8;
         ////////////////////////////////
         //////////HatchGrabber//////////
         ////////////////////////////////
-  public static int HatchArmPiston = NULL_PORT;
+        //TODO make sure this is the right PCM port
+  public static int HatchArmPiston = 1;
   public static int HatchSpinnyThing = NULL_PORT;
   public static int[] SPINNY_THING_ENCODER = {NULL_PORT, NULL_PORT};
 

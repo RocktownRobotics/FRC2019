@@ -7,7 +7,7 @@ import frc.robot.RobotMap;
 //again, used to be a StoppableSubsystem
 public class RampBridge extends Subsystem {
 	//TODO make the module number match the PCM ID
-	private Solenoid RampBridgePiston = new Solenoid(RobotMap.RAMP_BRIDGE_PISTON);
+	public Solenoid RampBridgePiston = new Solenoid(0, RobotMap.RAMP_BRIDGE_PISTON);
 
 public RampBridge() {
 

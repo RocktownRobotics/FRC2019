@@ -16,7 +16,7 @@ import frc.robot.Robot;
 public class RetractRamp extends Command {
   public RetractRamp() {
     // Use requires() here to declare subsystem dependencies
-    requires(Robot.kRampEnd);
+    requires(Robot.kRamp);
   }
 
 private boolean isRetractFinished = false;
@@ -33,7 +33,7 @@ private boolean isRetractFinished = false;
   @Override
   protected void execute() {
 
-    Robot.kRampEnd.RetractRampEnd();
+    Robot.kRamp.RetractRampPiston();
     
     System.out.println("Robot is retracting the ramp tip. Please refrain from overrunning Robot right now....");
 
